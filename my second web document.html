@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCDC website</title>
+    <script src="https://kit.fontawesome.com/b3a7060812.js" 
+       crossorigin="anonymous"></script>
+    <!--style start-->
+    <style>
+     .wrapper{
+         height: auto;
+         width: 100%;
+         border:1px solid;
+     }
+     .container{
+         height: 100%;
+         width: 80%;
+         margin:0 auto;
+         border: 1px solid
+         
+         
+     }
+     .header{
+         height: 120px;
+     }
+     .logo{
+            margin: 10px 0 0;
+
+        }
+    .logo1{
+            float: right;
+            margin: -90px 0 0;
+
+        }
+    .text{
+            margin-left: 35%;
+            margin-top: -110px;
+            border: 1px white;
+            }
+    .nav{
+            height: 50px;
+            background-color: green;
+            margin: 0.5em 0 0.5em 0;
+            margin-bottom: -0.3em;
+            padding-bottom: -0.3em;
+            margin-bottom: 20px;
+            margin-top: -28px;
+            }
+    .nav li{
+            list-style: none;
+            display: inline-block;
+            cursor: pointer;
+            padding:1em 0.5em 1em 0.5em;
+            color: white;
+        }
+    .nav li:hover,nav li:active{
+            background-color: yellow;
+            color: green;
+            }
+    .nav li.dropdown{
+            position: relative;
+           }
+    .nav li ul{
+            background-color: yellow;
+            color: green;
+            position: absolute;
+            display: none;
+            }
+    .nav li.dropdown:hover ul{
+            background-color: yellow;
+            color: green;
+            position: absolute;
+            display: block;
+            width: 150px;
+            top:50px;
+            padding: 1em;
+        }
+    .nav li.dropdown:hover ul li:hover{
+            color: brown;
+        }            
+    .feature-content{
+            height: 380px;
+            margin: 20px 0;
+            
+            }
+    .box1{
+        height: 300px;
+        width: 250px;
+        
+        float: right;
+    }
+    .box2{
+        height: 200px;
+        width: 700px;
+        border: 1px solid;
+        background-color: green;
+    }         
+    .feature-article{
+            height:350px;
+            margin: 20px 0;
+            
+            width: 700px;
+            margin-top: -160px;
+            margin-bottom: -40px;
+            }
+    .box3{
+        height: 300px;
+        border: 1px solid;
+        width: 210px;
+        float: right;
+        background-color:silver;
+
+    }
+    .box4{
+        height: 300px;
+        border: 1px solid;
+        width: 210px;
+        float: right;
+        margin-right: 32px;
+        background-color:silver;
+
+
+    }
+    .box5{
+        height: 300px;
+        border: 1px solid;
+        width: 210px;
+        background-color:silver;
+
+        
+
+    }                        
+    .feature-section{
+            height:350px;
+            margin: 20px 0;
+            
+            width: 700px;
+    }
+    .box6{
+        height: 300px;
+        border: 1px solid;
+        width: 210px;
+        float: right;
+        background-color:silver;
+
+
+    }
+    .box7{
+        height: 300px;
+        border: 1px solid;
+        width: 210px;
+        float: right;
+        margin-right: 32px;
+        background-color:silver;
+
+
+    }
+    .box8{
+        height: 300px;
+        border: 1px solid;
+        width: 210px;
+        background-color:silver;
+
+        
+
+    }
+    .box9{
+        height: 200px;
+        width: 200px;
+        border: 1px solid;
+        padding: 0.3em;
+        background-color: white;
+
+    }
+    .box10{
+        height: 200px;
+        width: 200px;
+        border: 1px solid;
+        padding: 0.3em;
+        background-color: white;
+
+    }
+    .box11{
+        height: 200px;
+        width: 200px;
+        border: 1px solid;
+        padding: 0.3em;
+        background-color: white;
+
+    }
+    .box12{
+        height: 200px;
+        width: 200px;
+        border: 1px solid;
+        padding: 0.3em;
+        background-color: white;
+
+    }
+    .box13{
+        height: 200px;
+        width: 200px;
+        border: 1px solid;
+        padding: 0.3em;
+        background-color: white;
+
+    }
+    .box14{
+        height: 200px;
+        width: 200px;
+        border: 1px solid;
+        padding: 0.3em;
+        background-color: white;
+
+    }
+   
+    .footer{
+            height: 300px;
+            border: 1px solid;
+            margin-top: 50px;
+            background-color:green;
+            margin-top:-15px;
+        }
+        
+    .box18{
+            height: 300px;
+            border: 1px solid;
+            width: 500px;
+            float: right;
+        }
+    .box19{
+            height: 300px;
+            border: 1px solid;
+            width: 300px;
+            float: right;
+            margin-right: 20px;
+            
+        }
+    .box20{
+            height: 300px;
+            border: 1px solid;
+            width: 370px;
+        }
+    .box21{
+        height: 180px;
+        width: 250px;
+        
+        margin-top: -20px;
+    }
+        
+    
+    .box21 li{
+        border-bottom: 1px solid white;
+        list-style: none;
+        
+    }
+    .box21 li a{
+        display: block;
+        padding: 10px 10px 10px 10px;
+        background-color: grey;
+        width: 230px;
+        margin-left: -40px;
+        color: white;
+        text-decoration: none;
+        height: 20px;
+        }
+    .box21 li a.active, .box21 li a:hover{
+        text-decoration: underline;
+    }
+    .box22{
+        height: 110px;
+        width: 270px;
+        border: 1px solid;
+        margin-top: 5px;
+        background-color: green;
+    }            
+    .copy{
+            height: 100px;
+            border: 1px solid;
+            background-color: orange;
+        }                                                             
+
+    </style>
+    <!--style end-->
+</head>
+<body>
+  <div class="border wrapper">
+      <div class="border container">
+          <div class="header">
+               <div class="logo"> <img src="logo.jpg" alt="" srcset=""></div>
+               <div class="logo1"><img src="icon3.jpg" alt="" srcset=""></div>
+               <div class="text"><h1>Nigeria Centre for Disease Control</h1></div>
+               <div><h2 style="margin-top: -30px; margin-left: 51%;color: silver;font-weight: lighter;">Protecting the health of Nigerians</h2></div>
+          </div>
+          <div class="border nav">
+            <ul class="nav">
+                <li>Home</li>
+                <li class="dropdown">About 
+                    <ul>
+                    <li>NCDC</li>
+                    <li> Departments</li>
+                    <li> Leadership</li>
+                    <li>Office of the DG</li>
+                    </ul>
+              </li>
+                <li class="dropdown">Publications
+                        <ul>
+                        <li>Weekly Epidemiological Reports</li>
+                        <li> Situation Reports</li>
+                        <li> Project Reports</li>
+                        <li> Annual Reports</li>
+                        <li> Guidelines/Protocol</li>
+                        <li>Establishment/Guiding Documents</li>
+                        <li> Research</li> 
+                        </ul>
+                </li>
+                <li class="dropdown">Diseases 
+                    <ul>
+                        <li>A-Z</li>
+                    </ul>
+                </li>
+                <li>News/Media</li>
+                <li class="dropdown" >Training/Events 
+                    <ul>
+                        <li>NFELTP</li>
+                        <li>Internship</li>
+                        <li>NCDC Tour</li>
+                    
+                    </ul>
+                </li>
+                <li>Projects</li>
+                <li>Jobs</li>
+                <li>Dashboard</li>
+                <li>Contact</li>
+            </ul>
+         </div>
+          <div class="border feature-content">
+              <div class="box1">
+                  <div class="box21">
+                      <ul>
+                          <li><a href="www.ncdc.gov.ng/ncd">About the NCDC <i class="fa fa-circle" aria-hidden="true" style="float: right;"></i></a></li>
+                          <li><a href="www.ncdc.gov.ng/departments">Departments <i class="fa fa-circle" aria-hidden="true" style="float: right;"></i></a></li>
+                          <li><a href="www.ncdc.gov.ng/dg">Office of the DG <i class="fa fa-circle" aria-hidden="true" style="float: right;"></i></a></li>
+                          <li><a href="www.ncdc.gov.ng/departments/hods">Leadership <i class="fa fa-circle" aria-hidden="true" style="float: right;"></i></a></li>
+                      </ul>
+                  </div>
+                  <div class="box22">
+                      <img src="ceo.jpg" alt="" srcset="" style="border-radius: 50%;margin-left: 45px;margin-top: 40px;">
+                  </div>
+              </div>
+              <div class="box2"><h1 style="color: white;font: 4em sans-serif;font-weight: lighter;margin-left: 50px;">Departments</h1></div>
+          </div>
+          <div class="border feature-article">
+              <div class="box3">
+                  <div class="box9"><img src="36.jpg" alt="" srcset=""></div>
+                  <div><h3 style="margin-left: 15px;">Health Emergency Preparedness Responce</h3></div>
+                
+                  </div>
+              <div class="box4">
+                  <div class="box10"><img src="35.jpg" alt="" srcset=""></div>
+                  <div><h3  style="margin-left: 15px;">Public Health Labouratory Services</h3></div>
+              </div>
+              <div class="box5">
+                  <div class="box11"><img src="34.jpg" alt="" srcset=""></div>
+                  <div><h3  style="margin-left: 15px;">Surveillance Epidemiology</h3></div>
+              </div>
+          </div>
+          <div class="border feature-section">
+            <div class="box6">
+                <div class="box12"><img src="38.jpg" alt="" srcset=""></div>
+                <div><h3  style="margin-left: 15px;">Finance and Account</h3></div>
+            </div>
+            <div class="box7">
+                <div class="box13"><img src="37.jpg" alt="" srcset=""></div>
+                <div><h3  style="margin-left: 15px;">Administration and Human Resourses</h3></div> 
+            </div>
+            <div class="box8">
+                <div class="box14"><img src="33.jpg" alt="" srcset=""></div>
+                <div><h3 style="margin-left: 15px;">Prevention Programmes and Knowledge Management</h3></div>
+            </div>
+          </div>
+          
+      </div>
+      <div class="footer">
+        <div class="box18">
+            <div style="height: 90px;width: 500px;"><h1 style="color: white;margin-top: 50px;">Mandate of NCDC</h1></div>
+            <div style="height: 150px;width: 500px;"><p style="color: white;margin-top: -40px;">The Nigeria Centre for Disease Control (NCDC) was established in the year 2011 in response to the challenges of public health emergencies and to enhance Nigeria’s preparedness and response to epidemics through prevention,
+                 detection and control of communicable and non-communicable diseases.</p></div>
+        </div>
+        <div class="box19">
+            <div style="height: 90px;width: 300px;"><h1 style="color: white;margin-top: 50px;">Social Media</h1></div>
+            <div style=" height: 135px;width: 260px;border-bottom: 1px solid white;margin-top: -25px;"><p style="color: white;"></p>
+                <div style="height: 25px; width: 300px;"><p style="margin: auto;color: white;margin-left: 30px;margin-top: -40px"><i class="fa fa-facebook-square" aria-hidden="true"></i> @NCDCgov</p></div>
+                <div style="height: 25px; width: 300px;"><p style="margin: auto;color: white;margin-left: 30px;"><i class="fa fa-twitter" aria-hidden="true"></i> @NCDCgov</p></div>
+                <div style="height: 25px; width: 300px;"><p style="margin: auto;color: white;margin-left: 30px;"><i class="fa fa-youtube" aria-hidden="true"></i> NCDC</p></div>
+                <div style="height: 25px; width: 300px;"><p style="margin: auto;color: white;margin-left: 30px;"><i class="fa fa-twitter" aria-hidden="true"></i> NCDCgov</p></div>
+                <div style="height: 25px; width: 300px;"><p style="margin: auto;color: white;margin-left: 30px;"> <i class="fa fa-envelope" aria-hidden="true"></i> t.me/NCDCgov (Telegram) </p></div>
+            
+            </div>
+            <div style=" height: 30px;width: 180px;margin-left: 30px;background-color: mediumseagreen; cursor: pointer;"><p style="margin: auto;color: white;margin-left: 20px;margin-top: 5px;">Suscribe To Newsletter</p></div>
+        </div>
+        <div class="box20">
+            <div style="height: 90px;width: 370px;"><h1 style="color: white;margin-left: 100px;margin-top: 50px;">Contacts</h1></div>
+            <div style="height:150px;width:370px">
+                <div style="height: 25px; width: 370px;"><p style="margin: auto;color: white;margin-left: 20px;margin-top: -40px;"><i class="fa fa-home" aria-hidden="true"></i> Plot 801, Ebitu Ukiwe Street, Jabi, Abuja, Nigeria</p></div>
+                <div style="height: 25px; width: 370px;"><p style="margin: auto;color: white;margin-left: 20px;"><i class="fa fa-phone" aria-hidden="true"></i>0800 970000 10 (Toll-Free Call Centre)</p></div>
+                <div style="height: 25px; width: 370px;"><p style="margin: auto;color: white;margin-left: 20px;"><i class="fa fa-envelope" aria-hidden="true"></i>info@ncdc.gov.ng</p></div>
+            </div>
+        </div>
+    </div>
+    <div class=" copy">
+        <div style="height: 30px;width:100%"><h1 style="margin: auto;margin-left: 100px;"> Connect Centre</h1></div>
+        <div style="height:15px;width: 25%; float: left;"><div style="height: 30px;width: 30px;background-color: white;"><img src="https://www.ncdc.gov.ng/themes/common/imgs/flat/social/phone-booth.png" alt="" srcset="" height="30px" width="30px"></div><div style="margin-top: -25px; margin-left: 45px;" >Toll Free Number: 0800 9700 0010</div></div>
+        <div style="height:15px;width: 25%;float: left;"><div style="height: 30px;width: 30px;background-color: white;"><img src="https://www.ncdc.gov.ng/themes/common/imgs/flat/social/whatsapp.png" alt="" srcset="" height="30px" width="30px"></div><div style="margin-top: -25px; margin-left: 45px;"> Whatsapp: +234 708 711 0839</div></div>
+        <div style="height:15px;width: 25%;float: left;"><div  style="height: 30px;width: 30px;background-color: white;"><img src="https://www.ncdc.gov.ng/themes/common/imgs/flat/social/public-phone.png" alt="" srcset="" height="30px" width="30px"></div><div style="margin-top: -25px; margin-left: 45px;"> SMS Number: +234 809 955 5577</div></div>
+        <div style="height:15px;width: 20%;float: left;"><div  style="height: 30px;width: 30px;background-color: white;"><img src="https://www.ncdc.gov.ng/themes/common/imgs/flat/social/public-phone.png" alt="" srcset="" height="30px" width="30px"></div><div style="margin-top: -25px; margin-left: 45px;">Call: +234 703 670 8970</div></div>
+    </div>
+    
+    
+  </div>
+</body>
+</html>
